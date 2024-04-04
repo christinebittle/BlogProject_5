@@ -16,7 +16,7 @@ namespace BlogProject.Controllers
         // The database context class which allows us to access our MySQL Database.
         private BlogDbContext Blog = new BlogDbContext();
         
-        //This Controller Will access the authors table of our blog database. .
+        //This Controller Will access the authors table of our blog database.
         /// <summary>
         /// Returns a list of Authors in the system
         /// </summary>
@@ -77,7 +77,7 @@ namespace BlogProject.Controllers
 
 
         /// <summary>
-        /// Finds an author from the MySQL Database through an id. .
+        /// Finds an author from the MySQL Database through an id.
         /// </summary>
         /// <param name="id">The Author ID</param>
         /// <returns>Author object containing information about the author with a matching ID. Empty Author Object if the ID does not match any authors in the system.</returns>
@@ -127,7 +127,7 @@ namespace BlogProject.Controllers
 
 
         /// <summary>
-        /// Deletes an Author from the connected MySQL Database if the ID of that author exists. Does NOT maintain relational integrity. .
+        /// Deletes an Author from the connected MySQL Database if the ID of that author exists. Does NOT maintain relational integrity.
         /// </summary>
         /// <param name="id">The ID of the author.</param>
         /// <example>POST /api/AuthorData/DeleteAuthor/3</example>
@@ -158,7 +158,7 @@ namespace BlogProject.Controllers
         /// <summary>
         /// Adds an Author to the MySQL Database.
         /// </summary>
-        /// <param name="NewAuthor">An object with fields that map to the columns of the author's table. .</param>
+        /// <param name="NewAuthor">An object with fields that map to the columns of the author's table.</param>
         /// <example>
         /// POST api/AuthorData/AddAuthor 
         /// FORM DATA / POST DATA / REQUEST BODY 
